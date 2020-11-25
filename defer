@@ -1,0 +1,8 @@
+#ifndef DEFER_H
+#define DEFER_H
+#include <functional>
+inline void defer_callback(std::function<void()>*f){(*f)();}
+#define defer_(X) defer_##X
+#define defer_con(X) defer_(X)
+#define defer std::function<void()> defer_con(__LINE__)[[gnu::cleanup(defer_callback)]]=[&]()
+#endif // DEFER_H
