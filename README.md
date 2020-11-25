@@ -1,5 +1,5 @@
-# defer
-Perfect defer in C++
+# Perfect defer in C++
+defer delays code execution  to the exit of the scope.
 
 Here's an example code in C++.
 ```
