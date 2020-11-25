@@ -12,8 +12,8 @@ Here's an example code in C++
 ```C++
 #include <defer>
 
-void defer_test() {
-    std::cout << "\ndefer_test begin\n";
+void defer_test ( ) {
+    std::cout << "defer_test begin\n";
     int* p=new int();
 
     defer{
@@ -30,17 +30,23 @@ void defer_test() {
     std::cout << "defer_test end B\n";
 }
 
-int main(){
-   defer_test();
-   return 0;
+int main ( ) {
+    cout << "main before\n";
+    
+    defer_test();
+    
+    cout << "main after\n";
+    
+    return 0;
 }
 ```
 Tested in C++11, C++14, C++17 and C++20
 
 ## Example output:
 ```
+main before
 defer_test begin
 defer_test end B
 defer executed
-
+main after
 ```
