@@ -2,13 +2,13 @@
 
 **defer** delays code execution to the exit of the scope.
 
-- No more code duplication.
+- No more code duplication
 
-- No more not all paths covered.
+- No more not all paths covered
 
-- No more errors.
+- No more errors
 
-Here's an example code in C++.
+Here's an example code in C++
 ```C++
 #include <defer>
 
@@ -37,7 +37,7 @@ int main(){
 ```
 Tested in C++11, C++14, C++17 and C++20
 
-## Output:
+## Example output:
 ```
 defer_test begin
 defer_test end B
