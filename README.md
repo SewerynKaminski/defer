@@ -1,7 +1,7 @@
 # defer
 Perfect defer in C++
 
-Here are exaple code in C++.
+Here's an example code in C++.
 ```
 #include <defer>
 
