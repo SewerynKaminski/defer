@@ -1,7 +1,10 @@
 # defer
 Perfect defer in C++
 
+Here are exaple code in C++.
 ```
+#include <defer>
+
 void defer_test() {
     std::cout << "\ndefer_test begin\n";
     int* p=new int();
