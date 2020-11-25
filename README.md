@@ -9,7 +9,7 @@ No more not all paths covered.
 No more errors.
 
 Here's an example code in C++.
-```
+```C++
 #include <defer>
 
 void defer_test() {
