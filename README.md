@@ -14,7 +14,7 @@ void defer_test() {
         std::cout << "defer executed\n";
     };
     
-    if ( true ) {
+    if ( !random() ) {
         std::cout << "defer_test end A\n";
         return;
     }
