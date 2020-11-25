@@ -37,7 +37,7 @@ int main(){
 ```
 Tested in C++11, C++14, C++17 and C++20
 
-Output:
+## Output:
 ```
 defer_test begin
 defer_test end B
